@@ -1090,8 +1090,6 @@ main .grid-container.freed-width {
 }
 #main #editor {
   background: #FFF;
-  padding: 2% 4%;
-  border: dashed 5px #0287D0;
 }
 #main .adjoined-top:before {
   height: 335px;

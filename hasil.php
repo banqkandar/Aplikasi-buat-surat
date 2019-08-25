@@ -36,8 +36,6 @@ include_once('config.php');
                       <img class="card-img-top img-fluid" style="height: 100px;" src="images/output.svg">
                       <div class="card-body">
                         <h5 class="card-title"><?php echo $data['nama_surat'] ?></h5>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins
-                            ago</small></p>
                       </div>
                     </div>
                   </a>

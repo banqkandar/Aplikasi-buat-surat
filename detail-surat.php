@@ -39,24 +39,19 @@ include_once('config.php');
 
     <div class="container">
         <div class="row mt-4">
-            <div class="col-md-7">
+            <div class="col-md-12">
                 <?php
                 $id = $_GET['id'];
                 $ambil = $con->query("SELECT * FROM surat join jenis_surat USING(id_surat) WHERE id = '$id' ");
                 $hasil = $ambil->fetch_assoc();
                 ?>
                 <a href="hasil.php" class="badge badge-pill badge-dark">back</a>
-                <!-- <a href="hapus-detail.php?id=<?= $hasil['id']; ?>" class="btn btn-sm btn-danger float-right ml-2"><i
-                        class="fas fa-eye fa-lg"></i> hapus</a> -->
-                <a href="" class="btn btn-sm btn-danger float-right ml-2" data-toggle="modal" data-target="#exampleModalHapus">
-                    hapus</a>
+                <!-- <a href="" class="btn btn-sm btn-danger float-right ml-2" data-toggle="modal" data-target="#exampleModalHapus">
+                    hapus</a> -->
                 <a href="" class="btn btn-sm btn-info float-right" data-toggle="modal" data-target="#exampleModalLong">
-                    edit</a>
-                <div class="card my-3 py-3" style="background:#f5f5f5; border: none;">
+                    edit - print</a>
+                <div class="card my-3 py-3" style="">
                     <div class="container">
-
-                        <h3><?= $hasil['nama_surat']; ?></h3>
-                        <div class="hr"></div>
                         <p><?= $hasil['isi_surat'] ?></p>
                     </div>
                 </div>

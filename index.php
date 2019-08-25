@@ -32,7 +32,6 @@ include_once('config.php');
                       <select class="form-control mt-4" name="nama_surat">
                         <?php
                           // query untuk menampilkan semua mata pelajaran dari tabel 
-                          $query = "SELECT * FROM jenis_surat";
                           $hasil = mysqli_query($con, "SELECT * FROM jenis_surat");
                           while ($data = mysqli_fetch_array($hasil))
                           {
